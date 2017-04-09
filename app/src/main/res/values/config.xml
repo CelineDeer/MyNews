@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--新闻头条appkey-->
+    <string name="news_appkey">6e206eef903a89399e5abbd4b227d9f9</string>
+    <!--新闻接口地址-->
+    <string name="news_url">http://v.juhe.cn/toutiao/index</string>
+</resources>

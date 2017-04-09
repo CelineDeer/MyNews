@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">50dp</dimen>
+    <dimen name="tilte_text_size">22dp</dimen>
+    <dimen name="title_padding">12dp</dimen>
+    <dimen name="normal_text_size">16dp</dimen>
+    <dimen name="text_padding">6dp</dimen>
+
+    <dimen name="login_logo_size">75dp</dimen>
+    <dimen name="logo_margin">60dp</dimen>
+    <dimen name="other_way_login_margin">150dp</dimen>
+    <dimen name="button_margin_bottom">15dp</dimen>
+    <dimen name="button_margin_left_and_right">30dp</dimen>
+    <dimen name="image_margin">25dp</dimen>
+
+    <dimen name="image_size">45dp</dimen>
+    <!--标题字体的大小-->
+    <dimen name="title_size">20dp</dimen>
+    <dimen name="indicatorHeight">2dp</dimen>
+    <!--pagerSlidingTabstrip高度-->
+    <dimen name="pagerSliding_height">35dp</dimen>
+
+    <!--首页新闻标题字体大小-->
+    <dimen name="home_news_title">15dp</dimen>
+
+</resources>

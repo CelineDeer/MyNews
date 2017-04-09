@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/title"
+        layout="@layout/system_header"></include>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_tab_bar_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/first_tab_change"
+            android:button="@null"
+            android:text="@string/tab_home"
+            style="@style/tabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/second_tab_change"
+            android:text="@string/tab_sencond"
+            style="@style/tabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/tab_third"
+            style="@style/tabStyle"
+            android:drawableTop="@drawable/third_tab_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/tab_me"
+            style="@style/tabStyle"
+            android:drawableTop="@drawable/forth_tab_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/news"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/logo_margin"
+        android:layout_width="@dimen/login_logo_size"
+        android:layout_height="@dimen/login_logo_size" />
+    <Button
+        android:id="@+id/login_with_phone"
+        android:text="@string/login_with_phone"
+        style="@style/btnStyle"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/login_with_nothing"
+        style="@style/btnStyle"
+        android:gravity="center"
+        android:text="@string/just_see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/title_padding"
+            android:src="@drawable/line_left"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/login_with_other_way"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/line_right"
+            android:layout_marginRight="@dimen/title_padding"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/image_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login_with_wechat"
+            android:src="@drawable/wechat_change"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/login_with_qq"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/qq_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/login_with_microblog"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/weibo_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/login_with_netease"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/wangyi_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

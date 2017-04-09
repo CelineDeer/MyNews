@@ -1,0 +1,18 @@
+<resources>
+    <!--请求成功的返回-->
+    <string name="reason">成功的返回</string>
+
+    <string name="app_name">News</string>
+    <string name="login">登录</string>
+    <string name="time_acount">8s 跳过</string>
+
+    <string name="login_with_phone">手机号登录</string>
+    <string name="just_see">随便看看</string>
+    <string name="register">注册</string>
+    <string name="login_with_other_way">其他方式登录</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_sencond">次页</string>
+    <string name="tab_third">三页</string>
+    <string name="tab_me">我</string>
+</resources>

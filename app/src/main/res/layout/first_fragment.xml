@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.astuetz.PagerSlidingTabStrip
+    android:id="@+id/pst"
+    app:pstsShouldExpand="true"
+    app:pstsUnderlineHeight="1px"
+    app:pstsIndicatorHeight="@dimen/indicatorHeight"
+    app:pstsIndicatorColor="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pagerSliding_height">
+</com.astuetz.PagerSlidingTabStrip>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/child_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
