@@ -2,12 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_margin="10dp"
+    android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!--1-->
+    <LinearLayout
+        android:id="@+id/list_item01"
+        android:padding="@dimen/listview_details_padding"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/news_image"
             android:layout_weight="3"
-            android:src="@mipmap/qqq"
+            android:src="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="55dp" />
         <LinearLayout
@@ -46,4 +55,29 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
+    <!--2-->
+    <LinearLayout
+        android:id="@+id/list_item02"
+        android:visibility="visible"
+        android:padding="@dimen/listview_details_padding"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/news_image02"
+            android:scaleType="fitXY"
+            android:src="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listview_pic_height2" />
+        <TextView
+            android:id="@+id/news_text02"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:text="11111111111"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listview_tv_height2" />
+    </LinearLayout>
 </LinearLayout>

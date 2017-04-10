@@ -24,4 +24,10 @@
     <!--首页新闻标题字体大小-->
     <dimen name="home_news_title">15dp</dimen>
 
+    <!--首页listview子布局边距-->
+    <dimen name="listview_details_padding">8dp</dimen>
+    <!--新闻图片宽度-->
+    <dimen name="listview_pic_height2">170dp</dimen>
+    <dimen name="listview_tv_height2">25dp</dimen>
+
 </resources>

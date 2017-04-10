@@ -73,11 +73,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //根据类型选择新闻
-    public List<NewsInner> selectNewsByType(String newsType,Context context){
+    public List<NewsInner> selectNewsByType(String newsType,Context context,int limitSize){
         List<NewsInner> result = new ArrayList<>();
         if (sqLiteDatabase != null){
             Log.e("selectNewsByType","before");
-            Cursor c = sqLiteDatabase.rawQuery("SELECT * FROM "+NEWS_LIST_NAME,null);
+            Cursor c = sqLiteDatabase.rawQuery("SELECT * FROM "+NEWS_LIST_NAME+" limit "+limitSize,null);
             Log.e("selectNewsByType","after");
             if (c == null){
                 Log.e("cursor","cursur is null");

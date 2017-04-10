@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.hp_laptop.myapplication.R;
@@ -55,26 +56,49 @@ public class ChildDetailsAdapter extends BaseAdapter{
         if (convertView == null){
             holder = new ViewHolder();
             convertView = layoutInflater.inflate(R.layout.home_list_detail,null);
+
+            holder.layout1 = (LinearLayout) convertView.findViewById(R.id.list_item01);
             holder.newsImage = (ImageView)convertView.findViewById(R.id.news_image);
             holder.newsAuthor = (TextView)convertView.findViewById(R.id.news_author);
             holder.newsTime = (TextView)convertView.findViewById(R.id.news_time);
             holder.newsTitle = (TextView)convertView.findViewById(R.id.news_title);
+
+            holder.layout2 = (LinearLayout) convertView.findViewById(R.id.list_item02);
+            holder.newsImage2 = (ImageView) convertView.findViewById(R.id.news_image02);
+            holder.newsTitle2 = (TextView) convertView.findViewById(R.id.news_text02);
+
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
-        imageLoader.displayImage(innerList.get(position).getThumbnail_pic_s(),holder.newsImage);
-        holder.newsAuthor.setText(innerList.get(position).getAuthor_name());
-        holder.newsTime.setText(innerList.get(position).getDate());
-        holder.newsTitle.setText(innerList.get(position).getTitle());
+
+        if (position % 4 == 0){
+            holder.layout1.setVisibility(View.GONE);
+            holder.layout2.setVisibility(View.VISIBLE);
+            imageLoader.displayImage(innerList.get(position).getThumbnail_pic_s(),holder.newsImage2);
+            holder.newsTitle2.setText(innerList.get(position).getTitle());
+        }else{
+            holder.layout1.setVisibility(View.VISIBLE);
+            holder.layout2.setVisibility(View.GONE);
+            imageLoader.displayImage(innerList.get(position).getThumbnail_pic_s(),holder.newsImage);
+            holder.newsAuthor.setText(innerList.get(position).getAuthor_name());
+            holder.newsTime.setText(innerList.get(position).getDate());
+            holder.newsTitle.setText(innerList.get(position).getTitle());
+
+        }
 
         return convertView;
     }
 
     private class ViewHolder{
+        LinearLayout layout1;
         ImageView newsImage;
         TextView newsTitle;
         TextView newsAuthor;
         TextView newsTime;
+
+        LinearLayout layout2;
+        ImageView newsImage2;
+        TextView newsTitle2;
     }
 }

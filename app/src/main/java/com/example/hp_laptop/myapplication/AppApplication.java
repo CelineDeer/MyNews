@@ -1,8 +1,8 @@
 package com.example.hp_laptop.myapplication;
 
 import android.app.Application;
+import android.util.Log;
 
-import com.antfortune.freeline.FreelineCore;
 import com.example.hp_laptop.myapplication.Uitls.HttpUtils.HttpUtils;
 import com.example.hp_laptop.myapplication.Uitls.ResourceUtil;
 import com.example.hp_laptop.myapplication.common.data.DatabaseHelper;
@@ -20,5 +20,9 @@ public class AppApplication extends Application {
         String appkey = ResourceUtil.getConfString(getApplicationContext(),"news_appkey");
         HttpUtils.getInstance().request(url,appkey,HttpUtils.TOP_TYPE,getApplicationContext());
 
+        //获取数据
+        String url01 = ResourceUtil.getConfString(getApplicationContext(),"news_url");
+        String appkey01 = ResourceUtil.getConfString(getApplicationContext(),"news_appkey");
+        HttpUtils.getInstance().request(url,appkey,HttpUtils.TOP_TYPE,getApplicationContext());
     }
 }

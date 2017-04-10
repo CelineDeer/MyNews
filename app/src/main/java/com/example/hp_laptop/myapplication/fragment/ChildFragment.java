@@ -49,7 +49,7 @@ public class ChildFragment extends Fragment {
         listView = (ListView) view.findViewById(R.id.home_list);
 
         innerList = new ArrayList<>();
-        innerList = DatabaseHelper.getInstance(context).selectNewsByType(HttpUtils.TOP_TYPE,context);
+        innerList = DatabaseHelper.getInstance(context).selectNewsByType(HttpUtils.TOP_TYPE,context,10);
 
         ChildDetailsAdapter adapter = new ChildDetailsAdapter(context,innerList);
         listView.setAdapter(adapter);

@@ -74,6 +74,7 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
 
     @Override
     public void onRefresh() {
+
         //刷新完成
     }
     private void initData(){
